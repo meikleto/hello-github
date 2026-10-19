@@ -1,2 +1,3 @@
-# hello-github (B)
+
+# hello-github
 This is my sample repo
