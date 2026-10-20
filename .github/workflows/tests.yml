@@ -17,3 +17,6 @@ jobs:
           python-version: ${{ matrix.python-version }}
       - run: pip install pytest
       - run: pytest
+      - run: echo "Secret is $GREETING"
+        env:
+          GREETING: ${{ secrets.GREETING }}
