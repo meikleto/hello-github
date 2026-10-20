@@ -1,0 +1,11 @@
+name: Hello
+on:
+  push:
+  workflow_dispatch:   # adds a "Run workflow" button
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello from GitHub Actions!"
+      - run: echo "This run was started by ${{ github.actor }} on branch ${{ github.ref_name }}"
